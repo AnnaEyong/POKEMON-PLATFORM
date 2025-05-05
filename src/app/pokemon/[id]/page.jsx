@@ -1,4 +1,3 @@
-"use client"
 import { Pokemons } from '@/app/utils/data';
 import FooterComponent from '@/components/footer/FooterComponent';
 import NavbarComponent from '@/components/navbar/NavbarComponent';
