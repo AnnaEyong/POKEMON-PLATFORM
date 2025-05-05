@@ -9,7 +9,7 @@ import { useState } from "react"
 
 
 const Page = () => {
-    // console.log(Pokemons)
+    //  console.log(Pokemons)
     const [searchTerm, setSearchTerm] = useState('')
     let searchResult = searchTerm.length > 0 ? Pokemons.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase())) : Pokemons;
     

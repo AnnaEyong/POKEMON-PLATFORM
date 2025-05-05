@@ -1,3 +1,4 @@
+"use client"
 import { useCart } from '@/store/cart.store';
 import { useStoreFavorite } from '@/store/favorite.store';
 import Link from 'next/link'
@@ -29,7 +30,7 @@ export default function NavbarComponent() {
         <button className="rounded-3xl w-3 h-3 bg-red-500 text-[0.5rem] absolute right-45 bottom-2 flex justify-center items-center">{cartSize}</button>
         <li className="cursor-pointer hover:bg-white/30 py-1 px-3 rounded-md transition duration-300"><FaHeart size={25}  /></li>
         <button className="rounded-3xl w-3 h-3 bg-red-500  text-[0.5rem] absolute right-33 bottom-2 flex justify-center items-center">{favoriteSize}</button>
-        <Link href="/contact" className='cursor-pointer hover:bg-white/30 py-1 px-3 rounded-md   transition duration-300'>Contact</Link>
+        <Link href="/contact" className='cursor-pointer hover:bg-white/30 py-1 px-3 rounded-md   transition duration-300'>Contact Us</Link>
           <SignedOut>
               <SignInButton />
               <SignUpButton />

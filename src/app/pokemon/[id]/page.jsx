@@ -1,4 +1,7 @@
+"use client"
 import { Pokemons } from '@/app/utils/data';
+import FooterComponent from '@/components/footer/FooterComponent';
+import NavbarComponent from '@/components/navbar/NavbarComponent';
 import React from 'react'
 
 
@@ -8,7 +11,7 @@ const Page = async({params}) => {
         const  pokedata = Pokemons.find(item => item.id == id)
   return (
     <>
-    <NavComponent />
+    <NavbarComponent />
 
     <div className='flex gap-5 items-center justify-center h-screen'>
 
